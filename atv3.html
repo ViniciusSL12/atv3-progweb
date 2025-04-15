@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário com LocalStorage e WhatsApp</title>
+  <link rel="stylesheet" href="atv3.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Formulário de Contato</h2>
+
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome">
+    </div>
+
+    <div class="form-group">
+      <label for="endereco">Endereço:</label>
+      <input type="text" id="endereco">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email">
+    </div>
+
+    <div class="form-group">
+      <label for="telefone">Telefone:</label>
+      <input type="text" id="telefone">
+    </div>
+
+    <div class="buttons">
+      <button onclick="gravarDados()">Gravar</button>
+      <button onclick="exibirDados()">Exibir</button>
+    </div>
+
+    <div id="dadosExibidos" class="exibicao"></div>
+
+    <hr>
+
+    <h3>Enviar dados via WhatsApp</h3>
+
+    <div class="form-group">
+      <label for="numeroWhatsApp">Número do WhatsApp (com DDD e código do país):</label>
+      <input type="text" id="numeroWhatsApp" placeholder="Ex: 5511999999999">
+    </div>
+
+    <button class="whatsapp-btn" onclick="enviarWhatsApp()">Enviar via WhatsApp</button>
+  </div>
+
+  <script src="atv3.js"></script>
+</body>
+</html>
+
